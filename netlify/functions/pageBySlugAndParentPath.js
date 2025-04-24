@@ -9,7 +9,7 @@ export async function handler(event, _context) {
     if (!res.ok) {
         return {
             statusCode: res.status,
-            body: JSON.stringify({error: "Failed to fetch from AEM"}),
+            body: JSON.stringify({error: "Failed to fetch from AEM", url}),
         };
     }
 
